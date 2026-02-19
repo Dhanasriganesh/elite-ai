@@ -1,4 +1,5 @@
 import React from 'react';
+import heroVideo from "../../assets/videos/eliteai.mp4";
 
 function HeroSection() {
   return (
@@ -9,22 +10,26 @@ function HeroSection() {
       lg:h-[80vh] lg:min-h-[700px]
       xl:h-screen xl:min-h-[800px]
       2xl:min-h-screen">
-      {/* Gradient Background */}
-      <div className="absolute inset-0 w-full h-full z-0" style={{
-        background: 'linear-gradient(135deg, #9333EA 0%, #EC4899 50%, #A855F7 100%)'
-      }}>
-        {/* Decorative Elements */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 left-0 w-80 h-80 bg-white/10 rounded-full blur-3xl"></div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
+      {/* Video Background */}
+      <div className="absolute inset-0 w-full h-full z-0">
+        {/* Video Container */}
+        <div className="absolute inset-0 w-full h-full">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="auto"
+            className="w-full h-full object-cover object-center"
+          >
+            <source src={heroVideo} type="video/mp4" />
+            {/* Fallback for browsers that don't support video */}
+            Your browser does not support the video tag.
+          </video>
         </div>
         
-        {/* Pattern Overlay */}
-        <div className="absolute inset-0 opacity-10" style={{
-          backgroundImage: `radial-gradient(circle at 2px 2px, rgba(255, 255, 255, 0.3) 1px, transparent 0)`,
-          backgroundSize: '50px 50px'
-        }}></div>
+        {/* Optional overlay for better content readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/10 z-10"></div>
       </div>
       
       {/* Content overlay area */}

@@ -12,7 +12,6 @@ const createTransporter = () => {
     console.warn('Gmail credentials not configured');
     return null;
   }
-  
   return nodemailer.createTransport({
     service: 'gmail',
     auth: {
