@@ -184,13 +184,13 @@ export default function Footer() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-8 sm:gap-10 lg:gap-12 mb-10 sm:mb-12">
             {/* Brand Section */}
             <div className="sm:col-span-2 lg:col-span-1 xl:col-span-1">
-              <div className="mb-4 sm:mb-6">
+             
                 <img 
                   src={logomain} 
                   alt="Elite AI Logo" 
-                  className="h-12 sm:h-14 md:h-16 w-auto object-contain mb-4"
+                  className="h-44 w-44 object-contain mb-2"
                 />
-              </div>
+            
               <p className="text-sm text-gray-600 mb-4 sm:mb-6 leading-relaxed max-w-sm">
                 Elite AI is an independent technology company and digital transformation partner. We help businesses design, integrate, and scale their digital solutions.
               </p>
@@ -212,7 +212,7 @@ export default function Footer() {
               </div>
 
               {/* Social Media */}
-              <div className="flex items-center gap-4 mt-6 sm:mt-8">
+              {/* <div className="flex items-center gap-4 mt-6 sm:mt-8">
                 <a 
                   href="#" 
                   className="w-10 h-10 rounded-full bg-gray-100 hover:bg-blue-600 flex items-center justify-center transition-colors group"
@@ -241,7 +241,7 @@ export default function Footer() {
                 >
                   <FaInstagram className="text-gray-600 group-hover:text-white transition-colors" />
                 </a>
-              </div>
+              </div> */}
             </div>
 
             {/* Explore Column */}
