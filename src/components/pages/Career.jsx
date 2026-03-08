@@ -498,7 +498,7 @@ function Career() {
                   )}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 md:gap-6 mb-4 sm:mb-5 md:mb-6">
                 <div>
-                  <label className="block text-gray-700 font-semibold mb-1 sm:mb-2 text-xs sm:text-sm">Full Name</label>
+                  <label className="block text-gray-700 font-semibold mb-1 sm:mb-2 text-xs sm:text-sm">Full Name <span className="text-red-500">*</span></label>
                   <input
                     type="text"
                     name="name"
@@ -509,7 +509,7 @@ function Career() {
                   />
                 </div>
                 <div>
-                  <label className="block text-gray-700 font-semibold mb-1 sm:mb-2 text-xs sm:text-sm">Email</label>
+                  <label className="block text-gray-700 font-semibold mb-1 sm:mb-2 text-xs sm:text-sm">Email <span className="text-red-500">*</span></label>
                   <input
                     type="email"
                     name="email"
@@ -532,6 +532,7 @@ function Career() {
                   className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-xs sm:text-sm bg-gray-50 focus:bg-white"
                   required
                   placeholder=""
+                  required
                 />
               </div>
               <div className="mb-4 sm:mb-5 md:mb-6">
@@ -560,7 +561,7 @@ function Career() {
                 ></textarea>
               </div>
               <div className="mb-4 sm:mb-5 md:mb-6">
-                <label className="block text-gray-700 font-semibold mb-1 sm:mb-2 text-xs sm:text-sm">Resume/Portfolio (Optional)</label>
+                <label className="block text-gray-700 font-semibold mb-1 sm:mb-2 text-xs sm:text-sm">Resume/Portfolio (*Only .pdf) <span className="text-red-500">*</span></label>
                 <input
                   type="file"
                   id="resume-file"
@@ -568,6 +569,7 @@ function Career() {
                   onChange={handleFileChange}
                   accept=".pdf,.doc,.docx,.zip"
                   className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-xs sm:text-sm bg-gray-50 focus:bg-white file:mr-2 sm:file:mr-4 file:py-1 sm:file:py-2 file:px-2 sm:file:px-4 file:rounded-lg file:border-0 file:text-xs sm:file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100"
+                  required
                 />
                 <p className="text-xs text-gray-500 mt-1">Accepted: PDF, DOC, DOCX, ZIP (Max 10MB)</p>
               </div>
@@ -598,7 +600,80 @@ function Career() {
           </div>
         </div>
       </section>
+  {/* How We Hire */}
+      <section className="py-12 sm:py-16 md:py-20 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-10 sm:mb-12">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 mb-3">
+                How We Hire
+              </h2>
+              <p className="text-slate-600 text-lg max-w-2xl mx-auto">
+                Our hiring process is designed to be transparent and efficient.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+              {[
+                { step: '1', title: 'Application Review', desc: 'Our team reviews your resume and experience.' },
+                { step: '2', title: 'Technical Evaluation', desc: 'Candidates may complete a technical interview or skills assessment.' },
+                { step: '3', title: 'Interview with Team', desc: 'Meet our engineers, managers, and leadership team.' },
+                { step: '4', title: 'Offer & Onboarding', desc: 'Successful candidates receive an offer and begin onboarding.' },
+              ].map((item) => (
+                <div
+                  key={item.step}
+                  className="relative bg-slate-50 rounded-xl border border-slate-200/80 p-5 sm:p-6 text-center sm:text-left"
+                >
+                  <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-indigo-100 text-indigo-700 font-bold text-lg mb-3">
+                    {item.step}
+                  </span>
+                  <h3 className="text-lg font-bold text-slate-900 mb-2">{item.title}</h3>
+                  <p className="text-slate-600 text-sm leading-relaxed">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
 
+      {/* Life at Elite AI Solutions */}
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-slate-50 to-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 mb-6 text-center">
+              Life at Elite AI Solutions
+            </h2>
+            <p className="text-slate-700 text-lg leading-relaxed text-center">
+              At Elite AI Solutions, we believe great companies are built by great people. Our culture promotes innovation, ownership, and collaboration. We celebrate new ideas and support employees in achieving both professional and personal success.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Apply Now / Contact */}
+      <section className="py-12 sm:py-16 md:py-20 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+          <div className="max-w-2xl mx-auto">
+            <div className="bg-slate-50 rounded-2xl border border-slate-200/80 p-6 sm:p-8 md:p-10 text-center">
+              <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-2">
+                Apply Now
+              </h2>
+              <p className="text-slate-600 mb-6">
+                Interested in joining our team?<br />Send your resume to:
+              </p>
+              <a
+                href="mailto:careers@eliteaisolutions.com"
+                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl font-semibold text-indigo-600 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200/80 transition-colors"
+              >
+                <span aria-hidden>📧</span>
+                careers@eliteaisolutions.com
+              </a>
+              <p className="text-slate-500 text-sm mt-6">
+                Or apply directly through the job listings above.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
 
 
