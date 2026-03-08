@@ -382,60 +382,71 @@ function Contact() {
           
           <div className="grid grid-cols-1 gap-4 sm:gap-6 lg:gap-8">
             {/* Location */}
-            <div className="bg-white rounded-xl sm:rounded-2xl shadow-xl p-4 sm:p-5 md:p-6 border border-gray-100">
-              <div className="flex items-center mb-3 sm:mb-4">
-                <svg className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-                <h3 className="text-lg sm:text-xl font-bold text-gray-900">Hanamkonda, Telangana</h3>
-              </div>
-              
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-2.5 sm:gap-3 mb-3 sm:mb-4">
-                <div className="md:col-span-2 space-y-1.5 sm:space-y-2">
-                  <div>
-                    <p className="text-xs text-gray-500 mb-0.5">Address:</p>
-                    <p className="text-xs sm:text-sm text-gray-700">
-                      3-14-259, Goutham Nagar,<br />
-                      Reddy Colony, Hanamkonda,<br />
-                      Telangana 506001
-                    </p>
-                  </div>
-                  <div>
-                    <p className="text-xs text-gray-500 mb-0.5">Phone:</p>
-                    <a href="tel:+918699235437" className="text-xs sm:text-sm text-blue-600 hover:text-blue-700 transition-colors break-all">
-                      +91 8699235437
-                    </a>
-                  </div>
-                  <div>
-                    <p className="text-xs text-gray-500 mb-0.5">Email:</p>
-                    <a href="mailto:info@eliteaisol.com" className="text-xs sm:text-sm text-blue-600 hover:text-blue-700 transition-colors break-all">
-                      info@eliteaisol.com
-                    </a>
-                  </div>
-                </div>
-                <div className="md:col-span-1">
-                  <img 
-                    src={indiaImage} 
-                    alt="India" 
-                    className="w-full h-20 sm:h-24 object-cover rounded-lg"
-                  />
-                </div>
-              </div>
-              
-              <div className="w-full h-36 sm:h-40 md:h-48 rounded-lg overflow-hidden border border-gray-200">
-                <iframe
-                  src="https://www.google.com/maps?q=3-14-259,+Goutham+Nagar,+Reddy+Colony,+Hanamkonda,+Telangana+506001&output=embed"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Elite AI Location"
-                ></iframe>
-              </div>
-            </div>
+           <div className="bg-white rounded-xl sm:rounded-2xl shadow-xl p-4 sm:p-5 md:p-6 border border-gray-100">
+  <div className="flex items-center mb-3 sm:mb-4">
+    <svg className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+    </svg>
+    <h3 className="text-lg sm:text-xl font-bold text-gray-900">
+      Charlotte, North Carolina
+    </h3>
+  </div>
+
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-2.5 sm:gap-3 mb-3 sm:mb-4">
+    <div className="md:col-span-2 space-y-1.5 sm:space-y-2">
+      <div>
+        <p className="text-xs text-gray-500 mb-0.5">Address:</p>
+        <p className="text-xs sm:text-sm text-gray-700">
+          4111-E Rose Lake Dr #9647,<br />
+          Charlotte,<br />
+          North Carolina 28217
+        </p>
+      </div>
+
+      <div>
+        <p className="text-xs text-gray-500 mb-0.5">Phone:</p>
+        <a
+          href="tel:+19132032133"
+          className="text-xs sm:text-sm text-blue-600 hover:text-blue-700 transition-colors break-all"
+        >
+          +1 913-203-2133
+        </a>
+      </div>
+
+      <div>
+        <p className="text-xs text-gray-500 mb-0.5">Email:</p>
+        <a
+          href="mailto:info@eliteaisol.com"
+          className="text-xs sm:text-sm text-blue-600 hover:text-blue-700 transition-colors break-all"
+        >
+          info@eliteaisol.com
+        </a>
+      </div>
+    </div>
+
+    <div className="md:col-span-1">
+      <img
+        src={indiaImage}
+        alt="USA Location"
+        className="w-full h-20 sm:h-24 object-cover rounded-lg"
+      />
+    </div>
+  </div>
+
+  <div className="w-full h-36 sm:h-40 md:h-48 rounded-lg overflow-hidden border border-gray-200">
+    <iframe
+      src="https://www.google.com/maps?q=4111-E+Rose+Lake+Dr+%239647,+Charlotte,+North+Carolina+28217&output=embed"
+      width="100%"
+      height="100%"
+      style={{ border: 0 }}
+      allowFullScreen
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+      title="Charlotte Office Location"
+    ></iframe>
+  </div>
+</div>
           </div>
         </div>
       </section>
