@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import contactBanner from '../../assets/contact/contactbanner.jpg';
 import inTouchImage from '../../assets/contact/in touch.png';
 import usaImage from '../../assets/contact/usa.png';
-import indiaImage from '../../assets/contact/odhisha.jpg';
+import indiaImage from '../../assets/contact/charlotte.png';
 import { getApiBaseUrl } from '../../utils/api';
 
 function Contact() {
