@@ -436,7 +436,7 @@ function Contact() {
 
   <div className="w-full h-36 sm:h-40 md:h-48 rounded-lg overflow-hidden border border-gray-200">
     <iframe
-      src="https://maps.app.goo.gl/pSPxirE5W4UTd2Uq9"
+      src="https://www.google.com/maps/search/?api=1&query=5501+Executive+Center+Dr+STE+234%2C+Charlotte%2C+NC+28212"
       width="100%"
       height="100%"
       style={{ border: 0 }}
