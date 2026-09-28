@@ -398,9 +398,9 @@ function Contact() {
       <div>
         <p className="text-xs text-gray-500 mb-0.5">Address:</p>
         <p className="text-xs sm:text-sm text-gray-700">
-          4111-E Rose Lake Dr #9647,<br />
+          5501 Executive Center Dr STE 234,<br />
           Charlotte,<br />
-          North Carolina 28217
+          North Carolina 28212
         </p>
       </div>
 
@@ -436,7 +436,7 @@ function Contact() {
 
   <div className="w-full h-36 sm:h-40 md:h-48 rounded-lg overflow-hidden border border-gray-200">
     <iframe
-      src="https://www.google.com/maps?q=4111-E+Rose+Lake+Dr+%239647,+Charlotte,+North+Carolina+28217&output=embed"
+      src="https://www.google.com/maps/place/5501+Executive+Center+Dr+%23234,+Charlotte,+NC+28212,+USA/@35.2026569,-80.7461191,712m/data=!3m2!1e3!4b1!4m6!3m5!1s0x885421e78746bfa7:0xab69a15026712203!8m2!3d35.2026569!4d-80.7435442!16s%2Fg%2F11pbb95j_z?entry=ttu&g_ep=EgoyMDI2MDkyMy4wIKXMDSoASAFQAw%3D%3D"
       width="100%"
       height="100%"
       style={{ border: 0 }}
