@@ -435,16 +435,15 @@ function Contact() {
   </div>
 
   <div className="w-full h-36 sm:h-40 md:h-48 rounded-lg overflow-hidden border border-gray-200">
-    <iframe
-      src="https://www.google.com/maps/search/?api=1&query=5501+Executive+Center+Dr+STE+234%2C+Charlotte%2C+NC+28212"
-      width="100%"
-      height="100%"
-      style={{ border: 0 }}
-      allowFullScreen
-      loading="lazy"
-      referrerPolicy="no-referrer-when-downgrade"
-      title="Charlotte Office Location"
-    ></iframe>
+   <a
+  href="https://www.google.com/maps/search/?api=1&query=5501+Executive+Center+Dr+STE+234,+Charlotte,+NC+28212"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <div className="map-container">
+    View Location on Google Maps
+  </div>
+</a>
   </div>
 </div>
           </div>
